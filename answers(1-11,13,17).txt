@@ -1,0 +1,72 @@
+---QUESTÃO1---
+O ponteiro é um tipo de dado que guarda o endereço de memória de outro dado, são úteis quando certo dado(variável) precisa ser acessada em diferentes partes do código. 
+
+---QUESTÃO2---
+expresao 1- 1
+expresao 2- -2
+expresao 3- 3
+expresao 4- 10
+
+---QUESTÃO3---
+60ff0c 7 5 15 9
+
+---QUESTÃO4---
+A expressão 4 é a única que não compila.
+
+---QUESTÃO5---
+Foram obtidas as respostas esperadas.
+
+---QUESTÃO6---
+Foram obtidas as respostas esperadas.
+
+---QUESTÃO7---
+Apenas a primeira expressão permite acessar o 3º elemento do vetor.
+A segunda expressão permite acessar o 5º elemento do vetor, a terceira permite acessar o endereço de memória da 2ª posição do vetor e a quarta permite acessar o endereço de memória da 4ª posição do vetor.
+
+---QUESTÃO8---
+A primeira expressão é válida pois atribui a ponteiro p o endereço de memória da segunda posição do vetor "mat". As expressões 2 e 3 apresentam o mesmo erro pois não é válido modificar endereço de memória armazenado em p por outro valor incrementado que se refere à um objeto. Na 4ª expressão o valor de x representa o primeiro valor do vetor "mat" e o incremento não tem nenhuma função, não sei porque.
+
+---QUESTÃO9---
+O primeiro programa imprime os valores do vetor "vet" e o segundo programa imprime os endereços de memória do vetor "vet" em hexadecimal.
+
+---QUESTÃO10---
+$ Supondo que "valor" quer dizer endereço de memória:
+x for declarado como char - valor de x + 1 = 4093; valor de x + 2 = 4094; valor de x + 3 = 4094;
+
+x for declarado como int - valor de x + 1 = 4094; valor de x + 2 = 4096; valor de x + 3 = 4098;
+
+x for declarado como float - valor de x + 1 = 4096; valor de x + 2 = 4100; valor de x + 3 = 4104;
+
+x for declarado como double - valor de x + 1 = 4100; valor de x + 2 = 4108; valor de x + 3 = 4116;
+
+$$ Supondo que "valor" quer dizer o valor literal que as posições 0, 1, 2 e 3 armazenam no vetor x, para qualquer tipo, os valores de (x+1), (x+2) e (x+3) exibirão seus conteúdos literais.
+
+---QUESTÃO11---
+As expressões não sairam identicas pois, por exemplo, uma variável int ocupa 4 bytes na minha máquina.
+---QUESTÃO12---
+A 3ª expressão: " aloha=value" " é inválida, pois além de o caractere " não poder ser usado nessa ocasião, um vetor está recebendo um único valor. O mesmo acontece com a 6ª e 7ª expressão: há uma atribuição inválida entre os tipos de variáveis associadas. 
+
+---QUESTÃO13---
+Ponteiros são variáveis que armazenam o endereço de memória de outras variáveis, seja ela de qualquer tipo. O pseudocódigo abaixo mostra na tela o endereço de memória de uma variável e em seguida o seu valor:
+int main(){
+	int a, *p;
+	a = 10;
+	p = &a;
+	printf("%p", p);
+	printf("%i", *p);
+return(0);
+}
+---QUESTÃO17---
+Foi incluida a biblioteca time.h e suas funções para medir o tempo de execução das duas questões. Segue o pseudocódigo incluido nas questões 15 e 16:
+
+#include <time.h>
+int main(){
+	int tempo;
+	time_t tinicial, tfinal;
+	tinicial = time(NULL);
+	...
+	tfinal = time(NULL);
+	tempo = difftime(tfinal, tinicial);
+	...
+}
+A questão 16 foi execultada em 4s, a questão 15 também.
