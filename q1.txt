@@ -1,2 +1,0 @@
----QUESTÃO1---
-O ponteiro é um tipo de dado que guarda o endereço de memória de outro dado, são úteis quando certo dado(variável) precisa ser acessada em diferentes partes do código. 
